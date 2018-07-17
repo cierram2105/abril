@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'abril_fatfaceregular';
+    src: url('../fonts/abrilfatface-regular-webfont.woff2') format('woff2'),
+         url('../fonts/abrilfatface-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** GENERAL ***/
+
+main {
+  width: 100%;
+  max-width: 1280px;
+  font-family: 'abril_fatfaceregular';
+}
+
+
+/*** TOP ***/
+
+#top {
+  background: white;
+  padding-top: 30px;
+}
+
+.top-sm-text {
+  color: #222222;
+  font-size: 30px;
+  font-family: 'abril_fatfaceregular';
+  padding-top: 50px;
+  padding-left: 50px;
+  text-transform: uppercase;
+  line-height: 0px;
+}
+
+.top-bold {
+  font-size: 120px;
+  font-family: 'abril_fatfaceregular';
+  padding-left: 50px;
+  line-height: 130px;
+}
+
+.top-bttm-text {
+  font-size: 30px;
+  font-family: 'abril_fatfaceregular';
+  padding-left: 165px;
+  line-height: 0px;
+  text-transform: uppercase;
+}
+
+/*** MID ***/
+
+#mid {
+  background: linear-gradient(to bottom, white, white 50%, black 50%, black);
+  padding-bottom: 130px;
+}
+
+.amp {
+  text-align: left;
+  width: 83px;
+  height: 117px;
+  font-size: 120px;
+}
+
+.halfStyle {
+    position: relative;
+    display: inline-block;
+    font-size: 120px; /* or any font size will work */
+    color: transparent; /* hide the base character */
+    overflow: hidden;
+    white-space: pre; /* to preserve the spaces from collapsing */
+    margin-left: 50px;
+    margin-top: 23px;
+}
+.halfStyle:before { /* creates the top part */
+    display: block;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    height: 56%;
+    content: attr(data-content); /* dynamic content for the pseudo element */
+    overflow: hidden;
+    pointer-events: none; /* so the base char is selectable by mouse */
+    color: black; /* for demo purposes */
+}
+.halfStyle:after { /* creates the bottom part */
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    content: attr(data-content); /* dynamic content for the pseudo element */
+    overflow: hidden;
+    pointer-events: none; /* so the base char is selectable by mouse */
+    color: white; /* for demo purposes */
+}
+
+/*** BOTTOM ***/
+
+#bottom {
+  background: black;
+  padding-top: 130px;
+  padding-bottom: 45px;
+}
+
+.bottom-sm-text {
+  color: white;
+  font-size: 36px;
+  padding-left: 50px;
+  text-transform: uppercase;
+  padding-top: 15px;
+  line-height: 10px;
+}
+
+.bottom-bold {
+  color: white;
+  font-size: 120px;
+  padding-left: 50px;
+  float: left;
+  line-height: 120px;
+}
+
+.bottom-bttm-text {
+  color: white;
+  font-size: 36px;
+  text-align: left;
+  line-height: 36px;
+  margin-left: 830px;
+  padding-bottom: -40px;
+  padding-top: 0px;
+  padding-right: 50px;
+
+
+}
